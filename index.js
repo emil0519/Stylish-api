@@ -87,6 +87,10 @@ app.get("/local", (req, res) => {
   return res.json(defaultCarousel);
 });
 
+app.get("/", async (req, res) => {
+  return res.send("hi");
+});
+
 // app.use("/api/auth", authRoute);
 
 // respond ok to post api
