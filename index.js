@@ -1,4 +1,5 @@
 const express = require("express");
+var cors = require("cors");
 const app = express();
 const port = 3002;
 const mongoose = require("mongoose");
@@ -12,7 +13,7 @@ const bcrypt = require("bcryptjs");
 const Product = require("./model/Product");
 const Password = require("./model/Password");
 const Carousel = require("./model/Carousel");
-var cors = require("cors");
+app.use(cors());
 
 mongoose
   .connect(process.env.MONGO_URL)
