@@ -12,6 +12,7 @@ const bcrypt = require("bcryptjs");
 const Product = require("./model/Product");
 const Password = require("./model/Password");
 const Carousel = require("./model/Carousel");
+var cors = require("cors");
 
 mongoose
   .connect(process.env.MONGO_URL)
