@@ -36,7 +36,7 @@ mongoose
   }
 })();
 
-app.use("/api", carouselRouter);
+app.use("/api/1.0", carouselRouter);
 
 app.get("/local", (req, res) => {
   return res.json(defaultCarousel);

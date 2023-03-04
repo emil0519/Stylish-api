@@ -7,6 +7,7 @@ const CarouselSchema = new Schema({
   product_id: { type: Number, required: true },
   picture: { type: mongoose.SchemaTypes.Url, required: true },
   story: { type: String, required: true },
+  id: { type: String, required: false }, // make the id field optional
 });
 
 // export model
